@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar should match to snapshoot  1`] = `
+<div>
+  <h1>
+    HOlaaaaaaa
+  </h1>
+</div>
+`;
