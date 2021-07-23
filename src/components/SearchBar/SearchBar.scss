@@ -1,0 +1,16 @@
+// .ui.header {
+//     .content {
+//         color: white;
+//     }
+// }
+
+.ui.block.header {
+  background-color: black !important;
+  .content {
+    color: white !important;
+    font-size: 2vw;
+  }
+  img {
+    height: 3vh;
+  }
+}
