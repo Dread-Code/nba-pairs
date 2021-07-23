@@ -4,12 +4,16 @@ import CardPairs from './CardPairs'
 
 const players = [
   {
-    header: 'Deron Williams',
-    description: '75'
+    first_name: 'Mike',
+    h_in: '70',
+    h_meters: '1.78',
+    last_name: 'Wilks'
   },
   {
-    header: 'Thabo Sefolosha',
-    description: '79'
+    first_name: 'Brevin',
+    h_in: '70',
+    h_meters: '1.78',
+    last_name: 'Knight'
   }
 ]
 
@@ -20,7 +24,7 @@ describe('CardPairs', () => {
   })
   test('2) should find a Deron Williams in the first element', () => {
     const wrapper = shallow(<CardPairs playersPair={players} />)
-    expect(wrapper.find('CardContent').getElements()[0].props.header).toBe('Deron Williams')
-    expect(wrapper.find('CardContent').getElements()[1].props.description).toBe('75')
+    expect(wrapper.find('CardContent').getElements()[0].props.header).toBe('Mike Wilks')
+    expect(wrapper.find('CardContent').getElements()[1].props.description).toBe('70')
   })
 })

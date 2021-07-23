@@ -4,12 +4,16 @@ import PropTypes from 'prop-types'
 
 const CardPairs = ({ playersPair }) => (
   <>
-    {playersPair.map(player => (
-      <Card key={player.header + player.length}>
-        <Card.Content className="title" header={player.header} />
-        <Card.Content className="description" description={player.description} />
-      </Card>
-    ))}
+    {playersPair.map(player => {
+      const header = `${player.first_name} ${player.last_name}`
+
+      return (
+        <Card key={header}>
+          <Card.Content className="title" header={header} />
+          <Card.Content className="description" description={player.h_in} />
+        </Card>
+      )
+    })}
   </>
 )
 

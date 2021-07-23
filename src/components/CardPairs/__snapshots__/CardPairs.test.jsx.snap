@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardPairs 1) Should match snapshoot 1`] = `
+<Fragment>
+  <Card
+    key="Mike Wilks"
+  >
+    <CardContent
+      className="title"
+      header="Mike Wilks"
+    />
+    <CardContent
+      className="description"
+      description="70"
+    />
+  </Card>
+  <Card
+    key="Brevin Knight"
+  >
+    <CardContent
+      className="title"
+      header="Brevin Knight"
+    />
+    <CardContent
+      className="description"
+      description="70"
+    />
+  </Card>
+</Fragment>
+`;

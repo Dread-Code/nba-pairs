@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer 1) should match snapshoot 1`] = `
+<div>
+  <Grid
+    columns={3}
+    doubling={true}
+  >
+    <GridColumn
+      key="1"
+      width="2"
+    >
+      <CardPairs
+        playersPair={
+          Array [
+            Object {
+              "first_name": "Nate",
+              "h_in": "69",
+              "h_meters": "1.75",
+              "last_name": "Robinson",
+            },
+            Object {
+              "first_name": "Chucky",
+              "h_in": "71",
+              "h_meters": "1.8",
+              "last_name": "Atkins",
+            },
+          ]
+        }
+      />
+    </GridColumn>
+    <GridColumn
+      key="2"
+      width="2"
+    >
+      <CardPairs
+        playersPair={
+          Array [
+            Object {
+              "first_name": "Mike",
+              "h_in": "70",
+              "h_meters": "1.78",
+              "last_name": "Wilks",
+            },
+            Object {
+              "first_name": "Brevin",
+              "h_in": "70",
+              "h_meters": "1.78",
+              "last_name": "Knight",
+            },
+          ]
+        }
+      />
+    </GridColumn>
+  </Grid>
+</div>
+`;
+
+exports[`CardContainer 3) should return card alert if recive a empty array 1`] = `
+<div>
+  <AlertCard />
+</div>
+`;
