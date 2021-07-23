@@ -1,9 +1,3 @@
-// .ui.header {
-//     .content {
-//         color: white;
-//     }
-// }
-
 .ui.block.header {
   background-color: black !important;
   .content {
@@ -11,6 +5,7 @@
     font-size: 2vw;
   }
   img {
-    height: 3vh;
+    height: 4vh !important;
+    border-radius: 3vh;
   }
 }

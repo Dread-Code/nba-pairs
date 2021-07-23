@@ -4,10 +4,12 @@ exports[`SearchBar should match to snapshoot 1`] = `
 <Header
   block={true}
 >
-  <Grid>
+  <Grid
+    doubling={true}
+  >
     <GridColumn
-      textAlign="center"
-      width={2}
+      verticalAlign="middle"
+      width={4}
     >
       <Icon
         as="i"
@@ -21,7 +23,7 @@ exports[`SearchBar should match to snapshoot 1`] = `
     </GridColumn>
     <GridColumn
       textAlign="center"
-      width="10"
+      width={8}
     >
       <Search
         icon="search"
@@ -29,17 +31,22 @@ exports[`SearchBar should match to snapshoot 1`] = `
         minCharacters={1}
         noResultsMessage="No results found."
         showNoResults={true}
+        size="large"
       />
     </GridColumn>
     <GridColumn
       floated="left"
       width={4}
     >
-      <img
-        alt="Mach Eight, LLC"
-        className="searchbar-match-icon"
-        src="//images.squarespace-cdn.com/content/v1/5f7c74b3ebc1ba132269c5a7/1611678115046-8C180XU5WIJ07PA60ADA/mach_8_logo_highlight_full.jpg?format=1500w"
-      />
+      <a
+        href="https://www.macheight.com/"
+      >
+        <img
+          alt="Mach Eight, LLC"
+          className="searchbar-match-icon"
+          src="//images.squarespace-cdn.com/content/v1/5f7c74b3ebc1ba132269c5a7/1611678115046-8C180XU5WIJ07PA60ADA/mach_8_logo_highlight_full.jpg?format=1500w"
+        />
+      </a>
     </GridColumn>
   </Grid>
 </Header>
