@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlertCard 1) should match snapshoot  1`] = `
+<Card>
+  <CardContent
+    className="alert-card"
+    header="Alert"
+  />
+  <CardContent
+    className="alert-card"
+    description="No matches found"
+  />
+</Card>
+`;
