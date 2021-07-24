@@ -11,11 +11,11 @@ describe('getPairs', () => {
   test('1) should return two players with 153', () => {
     const head = [mockPlayers[1], mockPlayers[0]]
     const queue = [mockPlayers[2], mockPlayers[3]]
-    const result = getPairs(153, mockPlayers)
+    const result = getPairs(153, [...mockPlayers])
 
-    expect(result.pair.length).toEqual(2)
+    expect(result.pair.length).toEqual(mockPlayers.length - 2)
     expect(result.pair).toEqual(head)
-    expect(result.array.length).toEqual(2)
+    expect(result.array.length).toEqual(mockPlayers.length - 2)
     expect(result.array).toEqual(queue)
   })
 
@@ -33,8 +33,8 @@ describe('getPairs', () => {
   })
 
   test('3) should return empty passing a sum that not exist ', () => {
-    const result = getPairs(169, mockPlayers)
+    const result = getPairs(169, [...mockPlayers])
     expect(result.pair.length).toEqual(0)
-    expect(result.array.length).toEqual(0)
+    expect(result.array.length).toEqual(mockPlayers.length - 2)
   })
 })

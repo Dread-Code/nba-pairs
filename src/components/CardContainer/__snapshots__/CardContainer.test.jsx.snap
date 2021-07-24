@@ -58,6 +58,8 @@ exports[`CardContainer 1) should match snapshoot 1`] = `
 
 exports[`CardContainer 3) should return card alert if recive a empty array 1`] = `
 <div>
-  <AlertCard />
+  <AlertCard
+    error="No matches found"
+  />
 </div>
 `;

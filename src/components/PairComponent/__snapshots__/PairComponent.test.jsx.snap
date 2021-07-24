@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`PairComponent 1)  should match sbnapshoot 1`] = `
-<div>
-  <h1>
-    Pair Component
-  </h1>
-</div>
-`;
