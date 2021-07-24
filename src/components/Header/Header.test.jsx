@@ -1,13 +1,13 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import SearchBar from './SearchBar'
+import HeaderPair from './Header'
 import { PlayerContext } from '../../Context/PlayersContext'
 
-describe('SearchBar', () => {
+describe('Header', () => {
   test('should match to snapshoot', () => {
     const wrapper = shallow(
       <PlayerContext.Provider>
-        <SearchBar />
+        <HeaderPair />
       </PlayerContext.Provider>
     )
     expect(wrapper).toMatchSnapshot()

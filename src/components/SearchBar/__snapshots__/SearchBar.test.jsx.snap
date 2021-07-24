@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`SearchBar should match to snapshoot 1`] = `<SearchBar />`;

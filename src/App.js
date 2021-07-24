@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import PairComponent from './components/PairComponent'
-import SearchBar from './components/SearchBar'
+import Header from './components/Header'
 import { PlayerContext } from './Context/PlayersContext'
 
 const App = () => {
   const [playerPairs, setPlayerPairs] = useState()
   return (
     <PlayerContext.Provider value={{ playerPairs, setPlayerPairs }}>
-      <SearchBar />
+      <Header />
       <PairComponent />
     </PlayerContext.Provider>
   )

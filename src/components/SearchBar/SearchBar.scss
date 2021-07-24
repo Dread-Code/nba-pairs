@@ -1,11 +1,26 @@
-.ui.block.header {
-  background-color: black !important;
-  .content {
-    color: white !important;
-    font-size: 2vw;
+.a-header__SearchBar {
+  display: flex;
+  justify-content: center;
+  font-size: 2vw;
+  input {
+    padding-left: 1em;
+    border: none !important;
+    border-radius: 2vw 0 0 2vw;
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      padding-left: 1vw;
+      color: #6b6b6b;
+      opacity: 1;
+    }
   }
-  img {
-    height: 4vh !important;
-    border-radius: 3vh;
+
+  button {
+    padding-right: 0.5vw;
+    font-size: 2vw;
+    // font-size: 1vw;
+    border-radius: 0 2vw 2vw 0;
   }
 }
