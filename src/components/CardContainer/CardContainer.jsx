@@ -6,7 +6,7 @@ import AlertCard from '../AlertCard/AlertCard'
 
 const CardContainer = ({ players }) => (
   <div>
-    {players.length > 0 ? (
+    {players?.length > 0 ? (
       <Grid doubling columns={3}>
         {players.map((playersPair, key) => (
           <Grid.Column width="2" key={key + 1}>
@@ -15,7 +15,7 @@ const CardContainer = ({ players }) => (
         ))}
       </Grid>
     ) : (
-      <AlertCard />
+      <AlertCard error="No matches found" />
     )}
   </div>
 )

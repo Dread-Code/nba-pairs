@@ -67,6 +67,16 @@
         "react/no-typos": [
             "off",
             "never"
-        ]
-    }
+        ],
+        "react/no-array-index-key": [
+            "off",
+            "never"
+        ],
+        "operator-linebreak": [ 1, "after", { "overrides": {
+            "?": "ignore",
+            ":": "ignore"
+        } } ],
+        "no-param-reassign": 0,
+        "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
+}
 }

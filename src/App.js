@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PairComponent from './components/PairComponent'
 import SearchBar from './components/SearchBar'
+import { PlayerContext } from './Context/PlayersContext'
 
 const App = () => {
+  const [playerPairs, setPlayerPairs] = useState()
   return (
-    <div>
-      <h1>App....</h1>
-      <SearchBar/>
-      <PairComponent/>
-    </div>
+    <PlayerContext.Provider value={{ playerPairs, setPlayerPairs }}>
+      <SearchBar />
+      <PairComponent />
+    </PlayerContext.Provider>
   )
 }
 
 export default App
-
