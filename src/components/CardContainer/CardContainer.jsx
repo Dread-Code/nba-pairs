@@ -3,15 +3,18 @@ import { Grid } from 'semantic-ui-react'
 import PropTypes from 'prop-types'
 import CardPairs from '../CardPairs/CardPairs'
 import AlertCard from '../AlertCard/AlertCard'
+import './CardContainer.scss'
 
 const CardContainer = ({ players }) => (
   <div>
     {players?.length > 0 ? (
-      <Grid doubling columns={3}>
+      <Grid doubling columns={2} padded={1}>
         {players.map((playersPair, key) => (
-          <Grid.Column width="2" key={key + 1}>
-            <CardPairs playersPair={playersPair} />
-          </Grid.Column>
+          <div className="cardpaircontainer">
+            <Grid.Column width="2" key={key + 1}>
+              <CardPairs playersPair={playersPair} />
+            </Grid.Column>
+          </div>
         ))}
       </Grid>
     ) : (
